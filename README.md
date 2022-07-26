@@ -35,7 +35,6 @@ The Individual Video Page:
 
 ![Video Page Screenshot](assets/prequelvideopage.PNG)
 
-Here is a link to the Heroku deployment: [Prequel Heroku Deployment](https://thawing-castle-85641.herokuapp.com)
 
 ## Usage
 
@@ -50,13 +49,3 @@ When visiting the site, you can create your own account or use a dummy account p
 
 This project is protected under the [MIT](https://choosealicense.com/licenses/mit/) license. (2021) (Aidan Rich, Nicole Pingar, Joey Fisher, and Phil Bohn)
 
-## Questions
-
-If there any questions regarding this project, our group, consisting of Aidan Rich, Nicole Pingar, Joey Fisher, and Phil Bohn can be contacted in the following places:
-
-Our GitHub profiles and email addresses are as follows:
-
-- [Joey Fisher](https://github.com/jfisher37) --- joseph.eric.fisher@gmail.com
-- [Aidan Rich](https://github.com/aidanrich) --- rich.aidan@gmail.com
-- [Nicole Pingar](https://github.com/nicolepingar) --- nicolepingar@gmail.com
-- [Phil Bohn](https://github.com/lamperouge1218) --- philbohn1791@gmail.com
