@@ -47,5 +47,5 @@ When visiting the site, you can create your own account or use a dummy account p
 
 ## License
 
-This project is protected under the [MIT](https://choosealicense.com/licenses/mit/) license. (2021) (Aidan Rich, Nicole Pingar, Joey Fisher, and Phil Bohn)
+This project is protected under the [MIT](https://choosealicense.com/licenses/mit/) license.
 
