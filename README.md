@@ -45,7 +45,5 @@ When visiting the site, you can create your own account or use a dummy account p
     Email: test@test.test
     Password: password03
 
-## License
 
-This project is protected under the [MIT](https://choosealicense.com/licenses/mit/) license.
 
