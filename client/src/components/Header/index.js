@@ -2,16 +2,16 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import Auth from '../../utils/auth';
+import Auth from '../../utils/auth'; 
 import Form from 'react-bootstrap/Form'
 import Container from 'react-bootstrap/Container'
 import NavDropdown from 'react-bootstrap/NavDropdown'
-import Button from 'react-bootstrap/Button';
+import Button from 'react-bootstrap/Button'; 
+import ProFile from './profile';
 
 const Header = () => {
   // if user is not logged in, level is -1 which restricts certain privileges 
   let level = -1;
-  console.log(Auth.getProfile());
   if (Auth.getProfile()) {
     level = Auth.getProfile().data.level
   };
@@ -34,38 +34,13 @@ const Header = () => {
           navbarScroll
         >
           <Link className="nav-item nav-link" to="/">Home</Link>
-          {Auth.loggedIn() ? (
-            <>
-              {level === 1 || level === 3 ? (<Link className="nav-item nav-link" to="/upload"> Upload</Link>) : ("")}
-              {level === 1 || level === 3 ? (<Link className="nav-item nav-link" to="/me">
-                View My Profile
-              </Link>) : ("")}
-              <Link className="nav-item nav-link" onClick={logout}>
-                Logout
-              </Link>
-            </>
-          ) : (
-            <>
-              <Link className="nav-item nav-link" to="/login">
-                Login
-              </Link>
-              <Link className="nav-item nav-link" to="/signup">
-                Signup
-              </Link>
-            </>
-          )}
+          
         </Nav>
-        
-        <Form className="d-flex">
-          <Form.Control
-            type="search"
-            placeholder="Search"
-            className="me-2"
-            aria-label="Search"
-          />
-          <Button variant="outline-success">Search</Button>
-        </Form>
+        <Navbar.Collapse className="justify-content-end">
+          <ProFile/>
+        </Navbar.Collapse>
       </Navbar.Collapse>
+      
     </Container>
   </Navbar>
   </div>

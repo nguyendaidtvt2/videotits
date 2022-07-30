@@ -98,10 +98,95 @@ nav {
   background-color: var(--navyBlue);
 }
 
+.slick-slide {
+  padding: 0 10px;
+}
 /* .navbar-brand {
   font-family: "Limelight", cursive;
   font-size: 3.25rem;
 } */
+.aside {
+  max-width: 335px;
+  width: 100%;
+  background: linear-gradient(180deg,#1a1919 0%,rgba(17,17,17,0) 100%);
+  border-radius: 8px;
+  padding: 30px;
+  margin-left: 30px;
+}
+.aside .ttl h3 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #ffff;
+}
+ h2 {
+  color: #ffff;
+}
+.LIKE-over {
+  position: absolute;
+  bottom: 12px;
+  margin-left: 2rem;
+}
+.video-likes-wp{
+  color : #ff0015;
+  float: left;
+}
+.video-views-wp {
+  color: #b81e2b;
+  float: right;
+  position: absolute;
+  right: -104px;
+}
+.video-likes,.video-views{
+  color : #ffff;
+}
+.tags-cloud ul li {
+  margin: 2px;
+  list-style: none;
+    display: inline-block;
+}
+.tags-cloud ul li a {
+  font-size: 16px;
+  padding: 1px 15px;
+}
+.gradient-box {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  position: relative;
+  padding: 7px 15px;
+  box-sizing: border-box;
+  background: #000;
+  background-clip: padding-box;
+  border: solid 1px transparent;
+  border-radius: 8px;
+  transition: all .4s;
+  z-index: 0;
+}
+.gradient-box:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -2;
+  margin: -1px;
+  border-radius: inherit;
+  background: linear-gradient(to right,#322eed,#e82bd5);
+}
+.gradient-box:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  border-radius: 8px;
+  z-index: -1;
+}
 
 .navbar-light .navbar-brand {
   color: var(--gold);
