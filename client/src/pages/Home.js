@@ -84,7 +84,6 @@ const Home = () => {
                                 ))
                                 }
                                 </Slider>                   
-                                <Link to="/AllVideos">About</Link>
                                 <h2>Best Hot Video</h2>
                                 <Slider {...settings}> 
                                 {videos &&
@@ -101,6 +100,7 @@ const Home = () => {
                                 ))
                                 }
                                 </Slider>  
+                                <h2>New Videos</h2>
                                 <VideoList videos={videos} title="HEADER TEXT" />
                             </div>
                             )} 
