@@ -9,10 +9,10 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Link , Routes , Route} from "react-router-dom";
 import HoverVideoPlayer from 'react-hover-video-player';
-import AllVideos from "./Profile";
 import { AiFillHeart } from 'react-icons/ai';
 import { GrView } from 'react-icons/gr';
-console.log(AllVideos);
+import VideoList from "../components/VideoList";
+
 // Home page
 const Home = () => {
   // Queries videos
@@ -101,6 +101,7 @@ const Home = () => {
                                 ))
                                 }
                                 </Slider>  
+                                <VideoList videos={videos} title="HEADER TEXT" />
                             </div>
                             )} 
 
