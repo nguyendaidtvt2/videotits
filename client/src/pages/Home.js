@@ -68,22 +68,6 @@ const Home = () => {
                         <div class="ttl-filter mt-ttl flex">
                             {!videos.length ? (<h3 className="roboto-font2">No Videos Yet!</h3>): (
                                 <div class="ttl">
-                                <h2>Trending Porn Video</h2>
-                                <Slider {...settings}> 
-                                {videos &&
-                                videos.map((video) => ( 
-                                    <div  key={video._id}>
-                                        <Link to={`/videos/${video._id}`}>
-                                        <HoverVideoPlayer videoSrc={video.cloudURL} volume={0.5} muted={false}  disablePictureInPicture={false}/>
-                                        <div class="LIKE-over">
-                                            <span className="video-likes-wp"><AiFillHeart/>   <span className="video-likes">{video.likes}</span></span>
-                                            <span className="video-views-wp"><GrView/>  <span className="video-likes">{video.views}</span></span>
-                                        </div>
-                                        </Link>  
-                                    </div>
-                                ))
-                                }
-                                </Slider>                  
                                 <h2>New Videos</h2>
                                 <VideoList videos={videos} title="HEADER TEXT" />
                             </div>

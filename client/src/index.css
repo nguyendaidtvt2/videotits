@@ -237,6 +237,7 @@ nav {
 
 video {
   max-width: 100%;
+  width: 360px !important;
 }
 
 .navbar .navbar-nav {
